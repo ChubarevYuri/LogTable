@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Base class for logging.
+ */
 public class BaseLog {
     private final static char END_LINE = '\n';
     private final static long VAL_TO_BYTES = 1024 * 1024;
@@ -111,6 +114,12 @@ public class BaseLog {
         return send;
     }
 
+    /**
+     * Send message.
+     * @param label linked with file.
+     * @param message message.
+     * @throws IOException error to work with file.
+     */
     protected static void send(@Nullable String label, @Nullable String message) throws IOException {
         if (message == null) {
             return;
@@ -135,6 +144,12 @@ public class BaseLog {
         }
     }
 
+    /**
+     * Chek size and delete lines.
+     * @param label linked with file.
+     * @param n count of ignored lines.
+     * @throws IOException error to work with file.
+     */
     protected static void sizeControl(@Nullable String label, int n) throws IOException {
         synchronized (BaseLog.class) {
             if (label == null) {
@@ -156,6 +171,9 @@ public class BaseLog {
      * Work with file.
      */
     protected static class FileWorker {
+        /**
+         * filename without format.
+         */
         protected final @NotNull String fileName;
         private final ArrayList<@NotNull String> labels = new ArrayList<>();
 

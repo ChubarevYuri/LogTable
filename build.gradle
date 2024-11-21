@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.github.ChubarevYuri'
+group = 'com.github.ChubarevYuri.LogTable'
 version = '1.0'
 
 repositories {
