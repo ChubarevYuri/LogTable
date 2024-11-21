@@ -134,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732157231779</updated>
       <workItem from="1732157232874" duration="2000" />
-      <workItem from="1732163626162" duration="1954000" />
+      <workItem from="1732163626162" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="Find err">
       <option name="closed" value="true" />
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732166003703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Find err">
+      <option name="closed" value="true" />
+      <created>1732166149894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732166149894</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
