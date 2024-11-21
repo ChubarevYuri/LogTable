@@ -29,7 +29,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             group = 'com.github.ChubarevYuri'
-            artifactId = "Logger"
+            artifactId = "LogTable"
             version = '1.0'
 
             artifact sourcesJar
