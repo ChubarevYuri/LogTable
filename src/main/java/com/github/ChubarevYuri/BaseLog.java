@@ -18,10 +18,25 @@ import java.util.Objects;
 public class BaseLog {
     private final static char END_LINE = '\n';
     private final static long VAL_TO_BYTES = 1024 * 1024;
+    /**
+     * folder to logs.
+     */
     protected static String path = null;
+    /**
+     * Base filename.
+     */
     protected static String name = null;
+    /**
+     * File format (charset).
+     */
     protected static Charset charset = StandardCharsets.UTF_8;
+    /**
+     * Min printed level.
+     */
     protected static Level level = null;
+    /**
+     * All files.
+     */
     protected static ArrayList<FileWorker> files = new ArrayList<>();
     private static int size = 1024;
     private static FileWorker fileWorker = null;
@@ -137,10 +152,17 @@ public class BaseLog {
         }
     }
 
+    /**
+     * Work with file.
+     */
     protected static class FileWorker {
         protected final @NotNull String fileName;
         private final ArrayList<@NotNull String> labels = new ArrayList<>();
 
+        /**
+         * Work with file.
+         * @param fileName filename without format.
+         */
         public FileWorker(@NotNull String fileName) {
             this.fileName = fileName;
         }

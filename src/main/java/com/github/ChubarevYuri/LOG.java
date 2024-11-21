@@ -6,6 +6,9 @@ import org.jetbrains.annotations.Nullable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Send log class.
+ */
 public class LOG extends BaseLog {
 
     /**
