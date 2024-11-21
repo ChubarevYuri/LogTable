@@ -33,9 +33,6 @@ publishing {
             version = '1.1'
 
             from components.java
-
-            artifact sourcesJar
-            artifact javadocJar
         }
     }
 }
