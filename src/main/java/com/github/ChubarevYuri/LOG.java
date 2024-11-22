@@ -27,6 +27,8 @@ public class LOG extends BaseLog {
         message = message.replace("\n", "\\n");
         message = message.replace("\r", "\\r");
         message = message.replace("\t", "\\t");
+        message = message.replace("\b", "\\b");
+        message = message.replace("\f", "\\f");
         message = String.format("%s %-7s %s",
                 new SimpleDateFormat("dd.MM.yyyy HH:mm:ss.SSS").format(new Date()),
                 level,
